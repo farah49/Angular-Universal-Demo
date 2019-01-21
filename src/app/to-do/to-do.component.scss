@@ -1,0 +1,33 @@
+.add-btn{
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    font-weight: bold;
+    background: #bbb;
+    text-align: center;
+    cursor: pointer;
+}
+input{
+    padding: 10px;
+}
+ul{
+    padding: 10px;
+    li{
+        list-style-type: none;
+        margin: 5px;
+        .todo{
+            display: inline-block;
+            width: 300px;
+            margin-right: 40px;
+            padding: 10px;
+        }
+        .done{
+            background: #c4e9c4;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+}

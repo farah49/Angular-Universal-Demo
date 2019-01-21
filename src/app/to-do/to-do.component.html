@@ -1,0 +1,10 @@
+<h3 *ngIf="!done">Add more items to this looooong list ---</h3>
+<h3 *ngIf="done">Wow! All items done!</h3>
+<input type="text" class="form-control" [(ngModel)]="newToDo"/>
+<div class="add-btn" (click)="updateList()">Add</div>
+<ul class="list">
+  <li *ngFor="let todo of toDoList; let i = index">
+    <span class="todo"> {{todo}}</span>
+    <span class="done" (click)="markDone(todo)">Done</span>
+  </li>
+</ul>
